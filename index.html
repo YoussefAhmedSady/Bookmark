@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Css/all fontawsom.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <div class="vh-100 p-5">
+        <div class="m-auto container">
+    <h1 class="m-auto">Bookmark</h1>
+    <div class="line mt-5 "></div><br>
+    <h2 class="m-auto mt-1 mb-3"><i class="fa-solid fa-bookmark fa-sm"></i>
+        Bookmark your favorite sites
+        <i class="fa-solid fa-bookmark fa-sm"></i></h2>
+        <label for="site name" class="fs-4"><i class="fa-solid fa-book-bookmark  me-1"></i>SiteName</label>
+        <input type="text" placeholder="Bookmark Name" class="form-control mt-2 " id="siteNameInput" oninput="validation1(this.value)" >
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <label for="site url" class="fs-4"><i class="fa-solid fa-link me-1"></i>Site URL</label>
+        <input type="text" placeholder="Website URL" class="form-control mt-2" id="siteUrlNameInput" oninput="validation2(this.value)">
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="text-center"><button class=" btn1 px-5 my-3" onclick="addBook()">Submit</button></div>
+        <div class="line mt-2 "></div>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <table class="table bg-white mt-4 text-center">
+            <thead>
+                <th>Index</th>
+                <th>WebsiteName</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>    
+            <tbody id="tbody">
+          
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+      <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(247, 236, 222);
+}
+h1{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Amita', serif;
+font-family: 'Pacifico', cursive;
+position: relative;
+width: fit-content;
+}
+h1::after{
+    content: "";
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 10px;left: 0;
+    background-color:rgb(254, 194, 96) ;
+    z-index: -1;
+    transition: all 1s;
+}
+
+h1:hover::after{
+    height: 50%;
+    
+}
+h2{
+    width: fit-content;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.line{
+    border-bottom: black 3px dotted;
+}
+.btn1{
+    background-color: rgb(187, 65, 32);
+    color: white;
+    font-size: 20px;
+    border: none ;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
